@@ -1,0 +1,369 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Cor do texto */
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Negrito para títulos */
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Regular para parágrafos */
+}
+
+
+body {
+  background-color: #f8f9fa; /* Cor de fundo */
+}
+
+/* Estilos do Navbar */
+.navbar {
+  background-color: #343a40; /* Cor de fundo da navbar */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Negrito para a marca */
+}
+
+.nav-btn-entrar {
+  border-color: #ffffff; /* Cor da borda do botão */
+  color: #ffffff; /* Cor do texto do botão */
+}
+
+
+/* Estilos das Features */
+.feature-box {
+  background-color: #fff; /* Cor de fundo das features */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para as features */
+  min-height: 300px;
+}
+
+/* Estilos do Footer */
+footer {
+  background-color: #212529; /* Cor do footer */
+}
+
+footer h5 {
+  color: #ffffff; /* Cor amarela para os títulos */
+}
+
+/* Estilo dos textos e listas */
+footer p, footer ul {
+  color: #fff; /* Cor branca para os textos e listas */
+}
+
+footer ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+footer ul li {
+  margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+/* Estilo dos links */
+footer a {
+  color: #fff !important; /* Links brancos */
+  text-decoration: none !important; /* Remove sublinhado */
+}
+
+footer a:hover {
+  color: #fff !important; /* Mantém links brancos no hover */
+  text-decoration: none !important; /* Mantém sem sublinhado no hover */
+}
+
+footer img {
+  margin-top: 10px; /* Espaçamento entre Solar Wise e o logo */
+}
+
+/* Correções de layout e alinhamento das colunas */
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.feature-box img {
+  width: 80px; /* Define a largura do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block;
+  margin: 0 auto; /* Centraliza o ícone */
+}
+.carousel-item img {
+  max-height: 550px; /* Ajuste este valor para controlar a altura máxima da imagem */
+  object-fit: cover; /* Isso garante que a imagem preencha o espaço sem distorção */
+}
+
+.navbar-logo {
+  max-width: 100px; /* Define a largura máxima para o logo da navbar */
+  height: auto;     /* Mantém a proporção original */
+}
+
+.footer-logo {
+  max-width: 80px; /* Define a largura máxima para o logo do rodapé */
+  height: auto;    /* Mantém a proporção original */
+}
+
+.feature-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.carousel-caption {
+  position: absolute;
+  top: 0; /* Começa no topo da imagem */
+  left: 0; /* Alinha à esquerda */
+  width: 40%; /* Largura do fundo, ajuste conforme necessário */
+  height: 100%; /* Altura total da imagem */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente mais leve */
+  padding: 40px; /* Espaçamento interno */
+  display: flex; /* Usar flexbox para centralizar conteúdo */
+  flex-direction: column; /* Direção vertical */
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.caption-content h5, .caption-content p {
+  color: white; /* Cor do texto branco */
+  margin: 0; /* Remove margens do título e parágrafo */
+}
+
+
+
+
+.navbar-brand {
+  margin-left: 40px; /* Ajusta o espaçamento entre o logo e o texto */
+}
+
+.nav-btn-entrar {
+  margin-left: 80px; /* Ajusta o espaçamento do botão Entrar para a esquerda */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Aumenta o espaçamento entre os itens */
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Remove a margem do último item para evitar espaçamento extra à direita */
+}
+
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  border: none;
+}
+
+.card-left {
+  background-color: #17541b;
+  color: white;
+  padding: 30px;
+}
+
+.card-right {
+  padding: 30px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #17541b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sobre-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-section h2 {
+  color: #028a3d;
+  font-size: 1.5rem;
+}
+
+.text-section h3 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 10px;
+  color: #666;
+}
+
+.image-section {
+  position: relative;
+  flex: 1;
+  max-width: 45%;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animações */
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.image-section.animated {
+  animation-delay: 0.5s;
+}
+
+#como-funciona {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+#como-funciona .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#como-funciona .text-section {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+
+#como-funciona .text-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #028a3d;
+}
+
+#como-funciona .text-section h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+#como-funciona .text-section p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+#como-funciona .video-section {
+  flex: 1;
+  max-width: 45%;
+  text-align: center;
+  padding: 20px;
+}
+
+#como-funciona .video-section iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #como-funciona .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #como-funciona .text-section,
+  #como-funciona .video-section {
+    max-width: 100%;
+  }
+
+  #como-funciona .video-section iframe {
+    height: 250px;
+  }
+}
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    max-width: 100%;
+  }
+
+  .image-section {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important; /* Alinhamento à esquerda em telas maiores */
+  }
+  
+  .text-center {
+    text-align: center !important; /* Alinhamento central */
+  }
+}

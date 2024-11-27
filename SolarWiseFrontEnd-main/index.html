@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Wise - Energia Inteligente</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZvBe6nW0M/u5ab7cQU+6gGJH/LxIPj0A3+cRAw2L0RjFSc2vcxTjK2tYoDytTg" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./assets/img/logo.svg" alt="Logo" class="navbar-logo me-2" style="max-width: 40px; height: auto;">
+        <span class="fw-bold">Solar Wise</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#calculadora">Calculadora</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#valores">Valores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#como-funciona">Como funciona</a>
+          </li>
+        </ul>
+      </div>
+      <a href="login.html" class="btn btn-outline-warning nav-btn-entrar">Entrar</a>
+    </div>
+  </nav>
+
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="./assets/img/banner1.jpg" class="d-block w-100" alt="Imagem 1">
+          <div class="carousel-caption d-none d-md-block text-start" style="background-color: rgba(0, 0, 0, 0.6);">
+              <h5 style="font-size: 2rem;">Energia Solar Inteligente</h5>
+              <p style="font-size: 1rem;">
+                  A energia solar inteligente representa uma revolução na maneira como captamos e utilizamos a energia solar. 
+                  Com o avanço tecnológico, os sistemas de energia solar evoluíram de meros painéis
+                  fotovoltaicos para soluções integradas e inteligentes que maximizam a eficiência e a usabilidade.
+                  Esses sistemas utilizam painéis solares de alta eficiência que podem gerar mais eletricidade em menor espaço, 
+                  otimizando o uso da luz solar. Além disso, a implementação de tecnologias como inversores inteligentes permite o monitoramento 
+                  em tempo real da produção e do consumo de energia, garantindo que cada watt gerado seja utilizado da melhor maneira possível.
+              </p>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+          <img src="./assets/img/banner2.jpg" class="d-block w-100" alt="Imagem 2">
+          <div class="carousel-caption d-none d-md-block text-start" style="background-color: rgba(0, 0, 0, 0.6);">
+              <h5 style="font-size: 2rem;">Economia Sustentável</h5>
+              <p style="font-size: 1rem;">
+                  A economia sustentável é fundamental para o futuro do nosso planeta. Utilizando fontes de energia renovável,
+                  como a energia solar, podemos reduzir nossa dependência de combustíveis fósseis e diminuir a emissão de gases
+                  de efeito estufa. A implementação de soluções sustentáveis em residências e empresas não apenas preserva o meio ambiente,
+                  mas também proporciona economias significativas nas contas de energia. Junte-se à mudança e faça a diferença!
+              </p>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+          <img src="./assets/img/banner3.jpg" class="d-block w-100" alt="Imagem 3">
+          <div class="carousel-caption d-none d-md-block text-start" style="background-color: rgba(0, 0, 0, 0.6);">
+              <h5 style="font-size: 2rem;">Inovação em Energia</h5>
+              <p style="font-size: 1rem;">
+                  A inovação em energia é essencial para atender às crescentes demandas do mundo moderno. Novas tecnologias,
+                  como sistemas de armazenamento de energia e redes inteligentes, estão transformando a forma como geramos
+                  e consumimos eletricidade. Com a energia solar, não apenas podemos gerar eletricidade de forma limpa, mas também
+                  integrar soluções inovadoras que aumentam a eficiência energética e reduzem custos. Este é o futuro da energia.
+              </p>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+
+<div class="container" id="calculadora">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card card-left">
+        <h2>Economize na sua conta de energia com a Maior Especialista em Energia Solar do Brasil</h2>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-right">
+        <h3>Simule sua economia de energia por mês</h3>
+        <label for="energy-slider">Arraste até chegar ao valor da sua conta</label>
+        <input type="range" id="energy-slider" class="slider" min="100" max="2000" step="50" value="950">
+        <p>R$ <span id="bill-value">950</span></p>
+        <p>Você terá uma economia de:</p>
+        <p class="result">R$<span id="savings">901.55</span> ao mês.</p>
+        <button class="btn btn-success">Receber proposta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Features Columns with Icons -->
+<div class="container mt-5" id="valores">
+  <div class="row text-center g-4">
+    <div class="col-md-4">
+      <div class="feature-box p-4 border rounded-3">
+        <img src="./assets/img/economia.png" alt="Ícone Economia" class="mb-3">
+        <h4 class="fw-bold">Economia de Energia</h4>
+        <p>Reduza custos em até 95% com energia solar e aproveite os benefícios financeiros.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-box p-4 border rounded-3">
+        <img src="./assets/img/sustentabilidade.png" alt="Ícone Sustentabilidade" class="mb-3">
+        <h4 class="fw-bold">Sustentabilidade</h4>
+        <p>A energia solar é uma solução limpa e sustentável, ideal para o futuro do planeta.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-box p-4 border rounded-3">
+        <img src="./assets/img/painel-solar.png" alt="Ícone Independência" class="mb-3">
+        <h4 class="fw-bold">Independência Energética</h4>
+        <p>Produza sua própria energia e torne-se menos dependente das concessionárias.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<body>
+  <section id="sobre" class="sobre-nos">
+    <div class="container">
+      <div class="content">
+        <div class="text-section animated">
+          <h2>Quem Somos</h2>
+          <h3> Especialista em Energia Solar</h3>
+          <p>
+            Na Solar Wise, oferecemos soluções completas em energia solar. Nossa missão é ajudar empresas e famílias a adotar práticas sustentáveis, economizando e protegendo o meio ambiente.
+          </p>
+          <p>
+            Com tecnologia de ponta e uma equipe altamente qualificada, entregamos projetos que transformam a forma de consumir energia, tornando-a acessível para todos.
+          </p>
+        </div>
+        <div class="image-section animated">
+          <img src="https://solarprime.com.br/wp-content/uploads/2022/12/post_thumbnail-7322f48d2e141135dd28e08fa2d8e893.jpeg.webp" alt="Equipe Solar Wise">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <body>
+    <section id="como-funciona" class="como-funciona">
+      <div class="container">
+        <div class="content">
+          <div class="text-section animated">
+            <h2>Como Funciona a Energia Solar</h2>
+            <h3>Transformando Luz em Energia</h3>
+            <p>
+              A energia solar funciona através da captação da luz do sol por painéis solares, que convertem a radiação em energia elétrica utilizável. Este processo ocorre graças às células fotovoltaicas presentes nos painéis.
+            </p>
+            <p>
+              A eletricidade gerada pode ser utilizada diretamente em residências e empresas ou armazenada em baterias para uso posterior. Além disso, sistemas conectados à rede elétrica permitem a compensação de energia, gerando economia significativa.
+            </p>
+          </div>
+          <div class="video-section animated">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FA9VBBw1Q-g" 
+            title="Como funciona a energia solar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  
+
+
+
+
+
+  <footer class="bg-dark text-white mt-5 py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Seção: Nome da Empresa e Logo -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-center text-md-left">
+          <span class="fw-bold">Solar Wise</span>
+          <br>
+          <img src="./assets/img/logo.svg" alt="Logo" class="navbar-logo me-2" style="max-width: 40px; height: auto;">
+
+        </div>
+  
+        <!-- Seção: Sobre Nós -->
+        <div class="col-md-3 text-center text-md-left mb-4">
+          <h5>Sobre Nós</h5>
+          <p>
+            <a href="#sobre">Quem Somos?</a>
+          </p>
+    
+         
+        </div>
+  
+        <!-- Seção: Contato -->
+        <div class="col-md-3 text-center text-md-left mb-4">
+          <h5>Calculadora</h5>
+          <p>
+            <a href="#calculadora">Economia</a>
+          </p>
+         
+        </div>
+  
+        <!-- Seção: Login Empresa -->
+        <div class="col-md-3 text-center text-md-left mb-4">
+          <h5>Login Empresa</h5>
+          <p>
+            <a href="login.html">Entrar</a>
+          </p>
+         
+        </div>
+      </div>
+  
+      <!-- Rodapé inferior -->
+      <div class="row text-center mt-4">
+        <div class="col">
+          <p>&copy; 2024 Solar Wise. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
